@@ -1,0 +1,18 @@
+<div class="col-md-6">
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">Section B</div>
+    <div class="panel-body form-group">
+      <label>Write Something : <input class="form-control" #msg></label>
+
+      <h5>Messages ({{logMessages.length}})</h5>
+      <ul><li *ngFor="let msg of logMessages">{{msg}}</li></ul>
+
+    </div>
+    <div class="panel-footer">
+      <button class="btn red btn-primary" (click)=onLog(msg.value)>Log Message</button>
+      <button class="btn danger" >Store Message</button>
+    </div>
+  </div>
+
+</div>
